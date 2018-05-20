@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Registration</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="toronto.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+
+    <div style="overflow-x: auto;">
+      <table border="1" align="center">
+       <tr>
+        <td> <a href="home.html"> Home </a></td>
+        <td> <a href="localdishes.html"> Local Dishes </a> </td>
+        <td> <a href="historicalplaces.html">Historical Places</a></td>
+        <td> <a href="usefullinks.html">Useful Links</a></td>
+        <td> <a href="aboutme.html">About Me</a></td>
+        <td> <a href="contactme.html">Contact Me </a></td>
+        <td> <h3>Registration</h3></td>
+
+      </tr>
+
+    </table>
+
+    
+  </div>
+
+  <img class="img_align" id="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSUrqpFHjihTSfgMqzUAwSIXcnc_3xSi-Plfk3-DayhtRkpbJThQ">
+  
+
+  <form class="registration" action="calculator.html" onsubmit="return validationForm()">
+
+    <ul>
+    	<li> <input id="name" type="text" placeholder="Name"> </li><br>
+    	<li> <input id="surname" type="text" placeholder="Surname" ></li><br>
+    	<li> <input id="date" type="text" placeholder="DOB (DD/MM/YYYY)"  ></li><br>
+    	<li> <input id="email" type="text" placeholder="E-mail"></li><br>
+    	<li> <input id="password" type="password" placeholder="Password" ></li><br>
+    	<li> 
+    		<select name="Gender">
+    			<option>Choose your gender</option>
+    			<option>Male</option>
+    			<option>Female</option>
+    			<option>Other</option>
+    			
+    		</select>
+      </li><br>
+
+
+      <li> Dogs or Cats?
+       <label for="dogs"> Dogs </label>
+       <input id="dogs" type="radio"> 
+       <label for="cats"> Cats </label>
+       <input id="cats" type="radio" >
+     </li> <br>
+
+     <li> Coffee or Tea? 
+       <label for="coffee">Coffee</label>
+       <input id="coffee" type="radio">
+       <label for="tea">Tea</label>
+       <input id="tea" type="radio" >
+     </li><br>
+
+
+   </ul>
+
+   <form action="calculator.html" onsubmit="return validationForm()">
+     <p> Please choose your hobbies: </p>
+     <input type="checkbox" name="Vgame" value="Video Games"> Video Games 
+     <input type="checkbox" name="swim" value="Swimming"> Swimming <br/>
+     <input type="checkbox" name="basket" value="Basketball"> Basketball 
+     <input type="checkbox" name="Football" value="Football"> Football <br/>
+     <input type="checkbox" name="hiking" value="Hiking"> Hiking 
+     <input type="checkbox" name="Other" value="other">Other <br/>
+
+   </form><br>
+
+   <p class="registration" id="btnSubmit"> If you are ready to submit -> <a href="calculator.html"><input type="submit" value="Submit" action="calculator.html" onclick="return validationForm()"></a>
+   </p>
+   <p class="registration"> If you would like to reset -> <a href="registration.html"><button>Reset</button></a></p>
+ </form>
+</div>
+
+<script type="text/javascript" src="registration.js"></script>
+</body>
+</html>
